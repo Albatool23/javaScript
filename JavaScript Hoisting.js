@@ -36,18 +36,17 @@
 
 
 
-//5
-// food = "chicken";
-// // mean();
-// // console.log(food);
-// var mean = function() {
-//     // food = "chicken";
-//     console.log(food);
-//     var food = "fish";
-//     console.log(food);
-//     mean();
-//
-// }
+5
+// console.log(food);
+var mean = function() {
+    food = "chicken";
+    console.log(food);
+    var food = "fish";
+    console.log(food);
+
+}
+mean();
+
 // console.log(food);
 
 
@@ -81,20 +80,22 @@
 
 //8
 
-console.log(makeDojo("Chicago", 65));
-console.log(makeDojo("Berkeley", 0));
-function makeDojo(name, students){
-    let dojo = {};
-    dojo.name = name;
-    dojo.students = students;
-    if(dojo.students > 50){
-        dojo.hiring = true;
-    }
-    else if(dojo.students <= 0){
-        dojo = "closed for now";
-    }
-    return dojo;
-}
+// console.log(makeDojo("Chicago", 65));
+// console.log(makeDojo("Berkeley", 0));
+// function makeDojo(name, students){
+//     let dojo = {};
+//     dojo.name = name;
+//     dojo.students = students;
+//     if(dojo.students > 50){
+//         dojo.hiring = true;
+//     }
+//     else if(dojo.students <= 0){
+//         dojo = "closed for now";
+//     }
+//     return dojo;
+// }
+//
+
 
 
 
