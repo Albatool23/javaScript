@@ -37,17 +37,15 @@
 
 
 //5
-// food = "chicken";
-// // mean();
-// // console.log(food);
+// console.log(food);
 // var mean = function() {
-//     // food = "chicken";
+//     food = "chicken";
 //     console.log(food);
 //     var food = "fish";
 //     console.log(food);
-//     mean();
-//
+
 // }
+// mean();
 // console.log(food);
 
 
