@@ -4,10 +4,8 @@
 // const [ randomCar ] = cars
 // const [ ,otherRandomCar ] = cars
 // //Predict the output
-// //tesla
-// //mercedes
-// console.log(randomCar)
-// console.log(otherRandomCar)
+// console.log(randomCar) //output Tesla
+// console.log(otherRandomCar) //output mercedes
 
 //2
 // const employee = {
@@ -17,8 +15,8 @@
 // }
 // const { name: otherName } = employee;
 // //Predict the output
-// // console.log(name);  not defined
-// console.log(otherName);
+//  console.log(name);  //not defined
+// console.log(otherName); //output Elon
 
 
 //3
@@ -30,7 +28,7 @@
 // const password = '12345';
 // const { password: hashedPassword } = person;
 // //Predict the output
-// console.log(password);
+// console.log(password); //output 12345
 // console.log(hashedPassword);  //undefined in person
 
 
@@ -40,9 +38,11 @@
 // const [,,,second] = numbers;
 // const [,,,,,,,,third] = numbers;
 // //Predict the output
-// console.log(first == second); //false
-// console.log(first == third); //true
+// console.log(first == second); // output false 2 != 5
+// console.log(first == third); //output true 2 == 2
 
+
+//5
 const lastTest = {
     key: 'value',
     secondKey: [1, 5, 1, 8, 3, 3]
@@ -51,10 +51,10 @@ const { key } = lastTest;
 const { secondKey } = lastTest;
 const [ ,willThisWork] = secondKey;
 //Predict the output
-console.log(key);
-console.log(secondKey);
-console.log(secondKey[0]);
-console.log(willThisWork);
+console.log(key);//output value
+console.log(secondKey);//output [1, 5, 1, 8, 3, 3]
+console.log(secondKey[0]); //output 1
+console.log(willThisWork);//output 5
 
 
 
