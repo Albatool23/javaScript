@@ -13,16 +13,16 @@ class Unit extends Card{
         this.resilience = resilience;
     }
 
-    attack(goal){
-        if(goal instanceof Unit){
+    attack(target){
+        if(target instanceof Unit){
             console.log(
                 `
-                ${this.name} attacked ${goal.name} and reduced
+                ${this.name} attacked ${target.name} and reduced
                  power: by ${this.power}
                  resilience: by${this.resilience}
                 `);
-            goal.power -= this.power;
-            goal.resilience -= this.resilience;
+            target.power -= this.power;
+            target.resilience -= this.resilience;
         }else{
             throw new Error("Card must be a Unit!")
         }
@@ -42,7 +42,7 @@ class Effect extends Card{
         this.magnitude = magnitude;
     }
 
-    goal(card){
+    target(card){
 
         if(card instanceof Unit){
             return(this.stat = "resilience")
@@ -71,9 +71,9 @@ const effectCardThree = new Effect("Pair Programming",3,
 
 unitCardOne.showStats();
 
-effectCardOne.goal(unitCardOne);
-effectCardTwo.goal(unitCardOne);
-effectCardThree.goal(unitCardOne);
+effectCardOne.target(unitCardOne);
+effectCardTwo.target(unitCardOne);
+effectCardThree.target(unitCardOne);
 
 unitCardOne.showStats();
 
