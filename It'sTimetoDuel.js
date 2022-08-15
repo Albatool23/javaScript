@@ -45,7 +45,7 @@ class Effect extends Card{
     goal(card){
 
         if(card instanceof Unit){
-            (this.stat = "resilience")
+            return(this.stat = "resilience")
                 ? card.resilience += this.magnitude
                 : card.power += this.magnitude;
             console.log(this.text);
@@ -54,6 +54,8 @@ class Effect extends Card{
             throw new Error("Target must be a Unit!")
         }
     }
+
+
 }
 
 const unitCardOne = new Unit("Red Belt Ninja",3,3,4);
@@ -69,6 +71,9 @@ const effectCardThree = new Effect("Pair Programming",3,
 
 unitCardOne.showStats();
 
+effectCardOne.goal(unitCardOne);
+effectCardTwo.goal(unitCardOne);
+effectCardThree.goal(unitCardOne);
 
 unitCardOne.showStats();
 
